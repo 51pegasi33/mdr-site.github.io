@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amoureux</title>
+    <link rel="icon" type="images/png" href="#"> 
+    <link href="../css/bootstrap.min.css" href="../css/materialize.min.css" href="../css/button.css"  rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      .card {
+        height: 100%;
+      }
+  
+      .card-img-top {
+        height: 70%;
+        object-fit: contain;
+      }
+
+      .purple-radio[type="radio"]:checked + span:after,
+      .purple-radio[type="radio"].with-gap:checked + span:before {
+        background-color: #4a148c;
+        border-color: black;
+      }
+
+    </style>
+  </head>
+  <body style="background-color: #d1c4e9">
+        <nav class="nav-extended">
+          <div class="nav-wrapper black">
+            <a href="#" class="brand-logo center">
+              <img src="../images/logo.png" style="width: 60px;height: 60px;" alt="logo">
+            </a>
+    </div>
+    <div class="nav-content purple darken-4">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a class="active" href="../index.html">Jeux</a></li>
+        <li class="tab"><a href="photos.html">Photos</a></li>
+        <li class="tab"><a href="video.html">Vidéo</a></li>
+      </ul>
+    </div>
+      </nav>
+
+
+    <main class="container-fluid" >
+      <section class="row justify-content-center m-5 d-flex">
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img src ="../images/kiss.jpg">
+                   <div class="card-body  d-flex flex-column">
+                      <h1 class="h3 card-title text-center">Les amoureux</h1>
+                      <div class="card-content">
+                        <p class="text-center">Qui veux tu voir ?</p>
+                        </div>
+                        <div class="card-action">
+          
+                          <form action="#">
+                          <fieldset>
+                          <div class="container-fluid row justify-content-center">
+                            <p>
+                              <label>
+                                <input type="radio" name="q1" value="a" class="purple-radio" />
+                                <span>Emma</span>
+                              </label>
+                            </p>
+                              <p>
+                                <label>
+                                  <input type="radio" name="q1" value="b" class="purple-radio"  />
+                                  <span>Clara</span>
+                                </label>
+                              </p>
+                                </form>
+                                </fieldset>
+                          </div>
+                              
+                            <a onclick="checkAnswers()" class='btn purple darken-4'  href='#' >Confirmer</a>
+                            <p id="result"></p>
+                      </div>
+                   </div>
+              </div>
+          </div>
+      </section>
+    </main> 
+      
+      <script src="../js/EmmaClara.js" src="..js/bootstrap.min.js" src="../js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
